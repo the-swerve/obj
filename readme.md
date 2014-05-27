@@ -1,8 +1,7 @@
 # obj
 
 A very tiny library that turns `Object.create()` into a method called `clone`,
-where the idea is to use prototypes to structure your systems rather than
-something resembling classes and instances:
+where the idea is to use a simple system of cloning and mixing prototypes:
 
 #### Obj.clone()
 
