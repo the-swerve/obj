@@ -48,3 +48,5 @@ component install the-swerve/obj
 ie6+
 
 A polyfill is provided for browsers that don't have `Object.create` defined.
+For those browsers, passing in a `propertiesObject` argument to `clone` will
+throw an error.
