@@ -2,7 +2,7 @@
 	"name": "obj",
 	"repo": "the-swerve/obj",
 	"description": "Simplified cloning and mixing for prototypes",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"keywords": ["prototype", "clone", "mixin"],
 	"dependencies": {},
 	"development": {
