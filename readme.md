@@ -18,7 +18,19 @@ Apple.taste === 'sweet' // true
 Apple.eat() // 'it tasted sweet and crunchy'
 ```
 
-You can optionally pass in the `propertiesObject` to `clone` as described [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create).
+#### Obj.init()
+
+`init` acts as a constructor for cloned objects. It is run when `clone` is called using any arguments passed to `clone`. For example, you may want a new object insantiated each time the original object is cloned:
+
+```js
+var Original = Obj.clone()
+Original.init = function(param) { this.new_obj = {key: param} }
+
+var MyClone = Original.clone('my value!')
+
+Original.new_obj //undefined
+MyClone.new_obj //{key: 'my value!'}
+```
 
 #### Obj.mixin()
 There's also a `mixin` method, allowing you to mix another object's properties
@@ -47,5 +59,3 @@ component install the-swerve/obj
 ie6+
 
 A polyfill is provided for browsers that don't have `Object.create` defined.
-For those browsers, passing in a `propertiesObject` argument to `clone` will
-throw an error.

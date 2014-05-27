@@ -15,9 +15,12 @@ if (typeof Object.create !== 'function') {
 }
 
 var Obj = {
-	clone: function(properties_object) {
-		return Object.create(this, properties_object)
+	clone: function() {
+		var obj = Object.create(this)
+		obj.init.apply(obj, arguments)
+		return obj
 	},
+	init: function() {},
 	mixin: function(obj) {
 		for (var key in obj) this[key] = obj[key]
 		return this
