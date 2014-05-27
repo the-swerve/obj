@@ -1,0 +1,15 @@
+{
+	"name": "obj",
+	"repository": "the-swerve/obj",
+	"description": "Simplified cloning and mixing for prototypes",
+	"version": "0.0.1",
+	"keywords": ["prototype", "clone", "mixin"],
+	"dependencies": {},
+	"development": {
+		"component/assert": "0.3.0"
+	},
+	"templates": [],
+	"scripts": ["index.js"],
+	"styles": [],
+	"license": "MIT"
+}
