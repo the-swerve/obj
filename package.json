@@ -1,0 +1,25 @@
+{
+	"name": "obj-clone",
+	"version": "0.1.0",
+	"description": "Simplified cloning and mixing for prototypes",
+	"keywords": ["prototype", "clone", "mixin"],
+	"bugs": "https://github.com/the-swerve/obj/issues",
+	"url": "https://github.com/the-swerve/obj",
+	"license": "MIT",
+	"author": {
+		"name": "Jay R Bolton",
+		"email": "jayrbolton@gmail.com",
+		"url": "https://github.com/the-swerve"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/the-swerve/obj.git"
+	},
+	"scripts": {
+		"test": "mocha --ui bdd --reporter spec ./test/index.js"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"mocha": "1.20.1"
+	}
+}
