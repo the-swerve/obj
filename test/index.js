@@ -1,5 +1,5 @@
 var assert = require('assert')
-var Obj = require ('obj')
+var Obj = require ('../')
 
 describe('obj', function() {
 
