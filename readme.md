@@ -51,7 +51,7 @@ Kale.eat() // 'it tasted bitter'
 #### installation
 
 ```sh
-component install the-swerve/obj
+npm install the-swerve/obj
 ```
 
 #### compatibility
